@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+    /* color */
+    --color-secondary: #5d5fef;
+    --color-transperent: transperent;
+}
+
+/* .nav-bar::after {
+    @apply content-[''] absolute left-0 top-[54%] -translate-y-1/12 w-full bg-gray-300 h-[1px];
+} */
+
+.history-table tr th:nth-child(2n){
+    @apply bg-[#E3E2FF] p-3
+}
+.history-table tr:nth-child(2n){
+    @apply bg-gray-100
+}
+.history-table tr td {
+    @apply p-3
+}
+.history-table tr th , .history-table tr td {
+    @apply min-w-[180px]
+}
+.login-form select{
+    @apply appearance-none ;
+    background-image: url(./assets/down-arrow.svg);
+    background-size: 14px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
